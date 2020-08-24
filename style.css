@@ -2,4 +2,9 @@
     background-color: purple;
     color: white;
 
+}.panel{
+    background-color: aqua;
+}
+p{
+    font-size: 10.5px;
 }
