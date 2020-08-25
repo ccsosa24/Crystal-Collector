@@ -12,12 +12,12 @@ var crystal = {
         value: 0
     },
 
-    purple:{
+    purple: {
         name: "Purple",
         value: 0
     },
 
-    red:{
+    red: {
         name: "Red",
         value: 0
     }
@@ -35,45 +35,56 @@ var lossCount = 0;
 
 //Functions//
 
-var getRandom = function(min, max) {
+var getRandom = function (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 //starts and reset//
-var startGame = function() {
+var startGame = function () {
 
     var currentScore = 0;
 
     targetScore = getRandom(19, 120);
 
-   crystal.blue.value = getRandom(1, 12);
-   crystal.green.value = getRandom(1, 12);
-   crystal.purple.value = getRandom(1, 12);
-   crystal.red.value = getRandom(1, 12);
+    crystal.blue.value = getRandom(1, 12);
+    crystal.green.value = getRandom(1, 12);
+    crystal.purple.value = getRandom(1, 12);
+    crystal.red.value = getRandom(1, 12);
 
-   $("#yourScore").html(currentScore);
-   $("#targetScore").html(targetScore);
+    $("#yourScore").html(currentScore);
+    $("#targetScore").html(targetScore);
 
-   console.log("-----------")
-   console.log("Target Score: " + targetScore);
-   console.log("Blue: " + crystal.blue.value + " | Green: " + crystal.green.value + " | Purple: " + crystal.purple.value + " | Red: " + crystal.red.value);
-   console.log("------------")
+    console.log("-----------")
+    console.log("Target Score: " + targetScore);
+    console.log("Blue: " + crystal.blue.value + " | Green: " + crystal.green.value + " | Purple: " + crystal.purple.value + " | Red: " + crystal.red.value);
+    console.log("------------")
 
 }
+
+//responds to clicks//
+var addValues = function(crystal) {
+
+    currentScore = currentScore + crystal.value;
+
+    console.log("Your Score: " + currentScore);
+}
+
+
+
 
 
 startGame();
 
 //click functions//
-$("#blue").click(function() {
-    alert("test");
+$("#blue").click(function () {
+    addValues(crystal.blue);
 });
-$("#green").click(function() {
-    alert("test");
+$("#green").click(function () {
+    addValues(crystal.green);
 });
-$("#purple").click(function() {
-    alert("test");
+$("#purple").click(function () {
+    addValues(crystal.purple);
 });
-$("#red").click(function() {
-    alert("test");
+$("#red").click(function () {
+    addValues(crystal.red);
 });
