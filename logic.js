@@ -33,20 +33,36 @@ var lossCount = 0;
 
 
 
-//start functions//
-var startGame(){
+//Functions//
+
+var getRandom = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+//starts and reset//
+var startGame = function() {
+
     var currentScore = 0;
 
-    targetScore = math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    targetScore = getRandom(19, 120);
 
+   crystal.blue.value = getRandom(1, 12);
+   crystal.green.value = getRandom(1, 12);
+   crystal.purple.value = getRandom(1, 12);
+   crystal.red.value = getRandom(1, 12);
+
+   $("#yourScore").html(currentScore);
+   $("#targetScore").html(targetScore);
+
+   console.log("-----------")
+   console.log("Target Score: " + targetScore);
+   console.log("Blue: " + crystal.blue.value + " | Green: " + crystal.green.value + " | Purple: " + crystal.purple.value + " | Red: " + crystal.red.value);
+   console.log("------------")
 
 }
 
 
-
-
-
-
+startGame();
 
 //click functions//
 $("#blue").click(function() {
