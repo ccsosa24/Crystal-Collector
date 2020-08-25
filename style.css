@@ -3,6 +3,9 @@
     color: white;
 
 }
+.panel-heading{
+    background-color:yellow;
+}
 .panel{
     background-color: aqua;
 }
@@ -12,8 +15,8 @@ p{
 
 img{
     border-radius: 8px;
-    width: 150px;
-    height: 150px;
+    width: 79px;
+    height: 79px;
     
 
 }
