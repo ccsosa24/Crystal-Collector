@@ -15,4 +15,4 @@ You will be given a random number at the begin of the game. Below you will see f
   ![](./imgs/crystalcollector.gif)
   
   
-  Enjoy!! 
+  Enjoy!! https://ccsosa24.github.io/Crystal-Collector/.
