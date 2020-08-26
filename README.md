@@ -10,3 +10,6 @@ This page was built using Bootstrap for responsiveness.
 
 How to Play
 You will be given a random number at the begin of the game. Below you will see four crystals. Each crystal is a different amount that will add points to your total score. To win the game you must match your total score to the random number given to you or you will lose the game. The value of each crystal is hidden from you until you click on it, and the value will change each game.
+
+
+![](crystalcollector.gif)
