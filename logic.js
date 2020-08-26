@@ -122,3 +122,5 @@ $("#purple").click(function () {
 $("#red").click(function () {
     addValues(crystal.red);
 });
+
+

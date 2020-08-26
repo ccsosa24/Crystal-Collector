@@ -1,13 +1,13 @@
 .jumbotron{
-    background-color: purple;
-    color: white;
+    background-color: transparent;
+    color: black;
 
 }
 .panel-heading{
-    background-color:yellow;
+    background-color:pink;
 }
 .panel{
-    background-color: aqua;
+    background-color: transparent
 }
 p{
     font-size: 10.5px;
@@ -16,8 +16,19 @@ p{
 img{
     border-radius: 8px;
     width: 79px;
-    height: 79px;
+    height: 70px;
     
 
 }
+
+  
+
+
+  body {
+    background-image: url("https://thumbs.gfycat.com/FaithfulEvergreenCornsnake-size_restricted.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+  }
+  
 
