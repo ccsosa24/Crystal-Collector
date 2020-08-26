@@ -42,7 +42,7 @@ var getRandom = function (min, max) {
 //starts and reset//
 var startGame = function () {
 
-    var currentScore = 0;
+    currentScore = 0;
 
     targetScore = getRandom(19, 120);
 
@@ -66,10 +66,44 @@ var addValues = function(crystal) {
 
     currentScore = currentScore + crystal.value;
 
+    $("#yourScore").html(currentScore);
+
+    checkWin();
+
+
     console.log("Your Score: " + currentScore);
 }
 
+//Win or Lose or Reset Game
+var checkWin = function() {
 
+    if(currentScore > targetScore) {
+        alert("Sorry! You Lose!");
+        console.log("YOu Lost");
+
+        lossCount++;
+
+        $("#lossCount").html(lossCount);
+
+        //reset Game//
+         startGame();
+
+    }
+
+    else if (currentScore == targetScore) {
+        alert("You Won!!!");
+        console.log("You Won");
+
+        winCount++;
+
+        $("#winCount").html(winCount);
+
+        //reset Game//
+        startGame();
+
+        
+    }
+}
 
 
 
